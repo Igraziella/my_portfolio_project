@@ -6,7 +6,7 @@ export default function Skills() {
         <section id="skills">
             <div className="container px-5 py-10 mx-auto">
                 <div className="text-center mb-20">
-                    <h1 className="sm:text-4xl text-3xl font-medium title-font text-white mb-4 ">
+                    <h1 className="sm:text-4xl text-3xl font-medium title-font mb-4 ">
                         Skills &amp; Technologies
                     </h1>
                     <p className="text-base leading-relaxed xl:w-2/4 lh:w-3/4 mx-auto text-white">
@@ -20,11 +20,11 @@ export default function Skills() {
                         <div key={skill} className="p-2 sm:w-1/2 w-full">
                             <div className="bg-green-800 hover:bg-yellow-900 rounded flex p-4 h-full items-center ">
                                 <span className="title-font font-medium text-white">
-                                    {skill.skill_1}
-                                    {skill.skill_2}
-                                    {skill.skill_3}
-                                    {skill.skill_4}
-                                    {skill.skill_5}
+                                    {skill[1]}
+                                    {skill[2]}
+                                    {skill[3]}
+                                    {skill[4]}
+                                    {skill[5]}
                                 </span>
                             </div>
                         </div>

@@ -10,15 +10,15 @@ export default function About() {
                     <br /> I make the most beautiful Front-end designs
                 </h1>
                 <p className="mb-8 leading-relaxed">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui
-                    laborum quasi, incidunt dolore iste nostrum cupiditate voluptas?
-                    Laborum, voluptas natus?
+                    With one year experience in Software Development from ALX, I make fully responsive sites 
+                    using latest Frontend technologies and frameworks like React
+                    Interested in having a user-friendly site?
                 </p>
                 <div className="flex justify-center">
                     <a href="#contact" className="inline-flex text-white bg-yellow-800 border-0 py-2 px-8 focus:outline-none hover:bg-green-700 hover:text-yellow-900 rounded text-lg">Work With Me
                     </a>
                     <a href="#projects" className="ml-4 inline-flex text-white bg-green-800 border-0 py-2 px-8 focus:outline-none hover:bg-yellow-900 hover:text-green-600 rounded text-lg">
-                        My Previous Works
+                        See My Works
                     </a>
                 </div>
                 </div>
