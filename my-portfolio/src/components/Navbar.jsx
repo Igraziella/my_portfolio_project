@@ -18,7 +18,7 @@ export default function Navbar() {
                     </a>
                 </nav>
                 <a 
-                    href="#contact" className="inline-flex items-center bg-yellow-800 border-0 py-1 px-3 rounded focus:outline-none hover:bg-white hover:text-yellow-500 tracking-widest mt-2 md:mt:0">
+                    href="#contact" className="inline-flex items-center bg-yellow-800 border-0 py-1 px-3 rounded focus:outline-none hover:bg-white hover:text-yellow-500 tracking-widest mt-4 md:mt:0">
                         Hire Me
                 </a>
             </div>

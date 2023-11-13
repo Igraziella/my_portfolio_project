@@ -7,11 +7,11 @@ export default function About() {
                 <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-left md:text-left mb-16 md:mb-0 items-center text-center">
                     <h1>
                     Hi, I'm Ijeoma.
-                    <br /> I make the most beautiful Front-end designs
+                    <br /> I make the most beautiful Web designs
                 </h1>
                 <p className="mb-8 leading-relaxed">
                     With one year experience in Software Development from ALX, I make fully responsive sites 
-                    using latest Frontend technologies and frameworks like React
+                    using latest Frontend technologies and frameworks like React.
                     Interested in having a user-friendly site?
                 </p>
                 <div className="flex justify-center">
