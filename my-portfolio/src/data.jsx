@@ -1,6 +1,6 @@
  export const projects = [
     {
-        title: "Diabetics Recipe App",
+        title: "Recipe App",
         subtitle: "HTML, CSS & Python Flask",
         description: "Recipe App for creating local meal plans tailored to cater to diabetics in Nigeria, sharing of meal ideas and customized menus between users",
         image: "./vite.svg",
