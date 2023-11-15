@@ -9,7 +9,7 @@ export default function Navbar() {
                         Ijeoma Obialor G
                     </a>
                 </a>
-                <nav className="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-gray-700 flex flex-wrap items-center justify-center">
+                <nav className="font-bold md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-gray-700 flex flex-wrap items-center justify-center">
                     <a href="#projects" className="mr-6 hover:text-yellow-600">
                         My Works
                     </a>
