@@ -11,19 +11,19 @@
         subtitle: "React, Tailwind & Python",
         description: "A mentorship site for new graduates and professionals seeking to switch careers. An ALX team collaboration project",
         image: "./me2mentor.PNG",
-        link: "https://me2mentor.com",
+        link: "https://me2mentor-app.vercel.app/",
     },
     {
         title: "PowerUp",
         subtitle: "HTML & CSS",
-        description: "A collaboration project for Tech4Dev's Women Techsters bootcamp, using HTML and CSS to build a website that provides solar power for African businesses with instalmental payment plans",
+        description: "A website that provides solar power for African businesses with instalmental payment plans. A collaboration project for Tech4Dev's Women Techsters bootcamp",
         image: "./powerup.PNG",
         link: "https://wtboostersdev.github.io/PowerUp/",
     },
     {
         title: "QR card component",
         subtitle: "HTML & CSS",
-        description: "A simple QR card component challenge from Frontend Mentor to test knowledge of basic CSS and HTML. vjhhhhhhduhudhhdgfgf hhgdyfgbfn jjgdhfhudbhdju",
+        description: "A simple QR card component challenge from Frontend Mentor made with basic CSS and HTML",
         image: "./qrcapture.PNG",
         link: "https://igraziella.github.io/Qrcard_component_challenge/",
     },
@@ -40,9 +40,12 @@ export const skills = [
         3: "Javascript",
     },
     {
-        4: "React",
+        4: "React Js",
     },
     {
         5: "Responsive Design",
     },
+    {
+        6: "MySQL"
+    }
 ]
