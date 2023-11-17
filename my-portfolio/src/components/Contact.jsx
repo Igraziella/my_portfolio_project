@@ -45,7 +45,7 @@ export default function Contact() {
                                 ADDRESS
                             </h2>
                             <p>
-                                Enugu, 400200
+                                Enugu, 400221
                             </p>
                         </div>
                         <div className="lg:w-1/2 px-6 mt-4 lg:mt-0">
@@ -67,10 +67,10 @@ export default function Contact() {
                 name="contact"
                 className="lg:w-1/3 md:w-1/2 flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0">
                     <h2 className="text-green-300 sm:text-4xl text-3xl mb-1 font-medium title-font ">
-                        Hire Me
+                        Get In Touch
                     </h2>
                     <p className="leading-relaxed text-white mb-5">
-                        Interested in working with me? Kindly leave me a message and i'll respond
+                        Interested in working with me? Kindly leave a message and i'll respond
                         in the soonest time possible.                     
                     </p>
                     <div className="relative mb-4">
@@ -106,7 +106,7 @@ export default function Contact() {
                         />
                     </div>
                     <button type="submit"
-                    className="text-white text-sm font-bold bg-green-500 border-0 py-2 px-6 focus:outline-none rounded hover:bg-yellow-800">
+                    className="text-white text-sm font-bold bg-green-500 border-0 py-2 w-24 focus:outline-none rounded hover:bg-yellow-800">
                         Submit
                     </button>
                 </form>

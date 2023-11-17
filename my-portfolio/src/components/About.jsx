@@ -3,16 +3,15 @@ import React from "react";
 export default function About() {
     return (
         <section id="about">
-            <div className="container mx-auto flex px-10 py-20 md:flex-row flex-col items-center">
+            <div className="container mx-auto flex px-10 py-20 md:flex-row flex-col items-center text-white">
                 <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-left md:text-left mb-16 md:mb-0 items-center text-center">
                     <h1>
                     Hi, I'm Ijeoma.
-                    <br /> I make the most beautiful Web designs
                 </h1>
                 <p className="mb-8 leading-relaxed">
-                    With one year experience in Software Development from ALX, I make fully responsive sites 
-                    using latest Frontend technologies and frameworks like React.
-                    Interested in having a user-friendly site?
+                    I am enthusiastic about collaborating on innovative projects and leveraging 
+                    my technical acumen to bring ideas to life. Please explore further for insights 
+                    into my portfolio and accomplishments in the dynamic realm of frontend development.
                 </p>
                 <div className="flex justify-center">
                     <a href="#contact" className="inline-flex text-white bg-yellow-800 border-0 py-2 px-8 focus:outline-none hover:bg-green-700 hover:text-yellow-900 rounded text-lg">Work With Me
