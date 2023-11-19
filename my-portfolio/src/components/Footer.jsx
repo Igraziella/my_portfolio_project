@@ -2,9 +2,9 @@ import React from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faTwitter, faLinkedin, faInstagram } from "@fortawesome/free-brands-svg-icons";
 
-export default function Footer() {
+const Footer = () => {
     return (
-        <footer className="container bg-gray-400 p-7 px-10 text-black">
+        <footer className="container bg-gray-400 p-7 px-10 md:mb-2 md:text-center text-black">
             <div className="inline-flex gap-6 text-3xl">
                 <a href="https://github.com/Igraziella">
                     <FontAwesomeIcon icon={faGithub} className="hover:text-yellow-800"/>
@@ -25,3 +25,5 @@ export default function Footer() {
         </footer>
     );
 }
+
+export default Footer;
