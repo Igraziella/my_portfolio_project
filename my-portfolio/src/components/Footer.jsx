@@ -4,8 +4,8 @@ import { faGithub, faTwitter, faLinkedin, faInstagram } from "@fortawesome/free-
 
 const Footer = () => {
     return (
-        <footer className="container bg-gray-400 p-7 px-10 md:text-center justify-center text-black">
-            <div className="inline-flex gap-6 text-3xl md:mb-2">
+        <footer className="container bg-gray-400 p-7 px-10 justify-center text-black">
+            <div className="flex gap-6 text-3xl">
                 <a href="https://github.com/Igraziella">
                     <FontAwesomeIcon icon={faGithub} className="hover:text-yellow-800"/>
                 </a>
@@ -18,8 +18,8 @@ const Footer = () => {
                 <a href="https://www.instagram.com/">
                     <FontAwesomeIcon icon={faInstagram} className="hover:text-yellow-800"/>
                 </a>
-            </div> 
-            <div className="flex justify-end font-semibold text-base md:text-center">
+            </div>
+            <div className="flex justify-end font-semibold text-base mt-3">
                 &copy;2023 iGraziella. All Rights Reserved
             </div>
         </footer>
