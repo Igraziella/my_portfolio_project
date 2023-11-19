@@ -5,7 +5,7 @@ import { faGithub, faTwitter, faLinkedin, faInstagram } from "@fortawesome/free-
 const Footer = () => {
     return (
         <footer className="container bg-gray-400 p-7 px-10 text-black">
-            <div className="flex gap-6 text-3xl justify-start md:justify-center md:items-center">
+            <div className="flex gap-6 text-3xl md:justify-center md:items-center">
                 <a href="https://github.com/Igraziella">
                     <FontAwesomeIcon icon={faGithub} className="hover:text-yellow-800"/>
                 </a>
