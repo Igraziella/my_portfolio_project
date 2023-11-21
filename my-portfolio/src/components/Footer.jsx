@@ -1,6 +1,6 @@
 import React from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGithub, faTwitter, faLinkedin, faInstagram } from "@fortawesome/free-brands-svg-icons";
+import { faGithub, faXTwitter, faLinkedin, faInstagram } from "@fortawesome/free-brands-svg-icons";
 
 const Footer = () => {
     return (
@@ -10,7 +10,7 @@ const Footer = () => {
                     <FontAwesomeIcon icon={faGithub} className="hover:text-yellow-800"/>
                 </a>
                 <a href="https://twitter.com/ObialorGraziel2">
-                    <FontAwesomeIcon icon={faTwitter} className="hover:text-yellow-800"/>
+                    <FontAwesomeIcon icon={faXTwitter} className="hover:text-yellow-800"/>
                 </a>
                 <a href="https://www.linkedin.com/in/ijeoma-obialor-012494114/">
                     <FontAwesomeIcon icon={faLinkedin} className="hover:text-yellow-800"/>
