@@ -20,7 +20,7 @@ const Footer = () => {
                 </a>
             </div>
             <div className="flex justify-end font-semibold text-base mt-3">
-                &copy;2023 iGraziella. All Rights Reserved
+                &copy; 2023 iGraziella. All Rights Reserved
             </div>
         </footer>
     );
