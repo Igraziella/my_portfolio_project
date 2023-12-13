@@ -1,5 +1,19 @@
  export const projects = [
     {
+        title: "Me2Mentor",
+        subtitle: "React, Tailwind & Python",
+        description: "A mentorship site for new graduates and professionals seeking to switch careers. An ALX team collaboration project",
+        image: "./me2mentor.PNG",
+        link: "https://me2mentor-app.vercel.app/",
+    },
+    {
+        title: "Interactive Rating Component",
+        subtitle: "HTML, CSS & Javascript",
+        description: "An interactive rating component made with Html, Css and vanilla Javascript",
+        image: "./rating.PNG",
+        link: "https://interactive-rating-component-bay-five.vercel.app/",
+    },
+    {
         title: "Recipe App",
         subtitle: "HTML, CSS & Python Flask",
         description: "Recipe App for creating local meal plans tailored to cater to diabetics in Nigeria, sharing of meal ideas and customized menus between users",
@@ -7,11 +21,11 @@
         link: "https://diabeticsmealcompanion.com",
     },
     {
-        title: "Me2Mentor",
-        subtitle: "React, Tailwind & Python",
-        description: "A mentorship site for new graduates and professionals seeking to switch careers. An ALX team collaboration project",
-        image: "./me2mentor.PNG",
-        link: "https://me2mentor-app.vercel.app/",
+        title: "Product Preview Card",
+        subtitle: "HTML & CSS",
+        description: "A simple product preview card made with HTML & CSS",
+        image: "./product-preview-card.png",
+        link: "https://product-preview-card-lilac-ten.vercel.app/",
     },
     {
         title: "PowerUp",
