@@ -18,7 +18,7 @@ const Navbar = () => {
                     </a>
                 </nav>
                 <a 
-                    href="#contact" className="inline-flex items-center bg-yellow-800 border-0 py-1 px-3 rounded-lg focus:outline-none hover:bg-white hover:text-yellow-500 mt-4 md:mt:0 mb-2 mr-2">
+                    href="#contact" className="inline-flex items-center bg-yellow-800 border-0 py-1 px-3 rounded-lg focus:outline-none hover:bg-white hover:text-yellow-500 mt-3 md:mt:0 mb-3 mr-2">
                         Let's Meet
                 </a>
             </div>

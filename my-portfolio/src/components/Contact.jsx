@@ -16,12 +16,12 @@ const Contact = () => {
     function handleSubmit(e) {
         e.preventDefault();
         fetch("/", {
-            method: "POST",
+            method: "POST, GET",
             headers: { "Content-Type": "application/x-www-form-urlencoded" },
             body: encode({ "form-name": "contact", name, email, message }),
         })
         .then(() => alert("Message sent"))
-        .catch((error) => alert(error));
+        .catch((error) => alert("error"));
     }
 
     return (

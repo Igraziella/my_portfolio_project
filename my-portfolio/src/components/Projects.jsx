@@ -12,7 +12,7 @@ export default function Projects() {
                     </h1>
                     <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
                         Below are websites and apps i've built in the past. You can view them
-                        by just clicking on each image.
+                        by clicking on each image.
                     </p>
                 </div>
                 <div className="flex flex-wrap -m-4">
@@ -21,7 +21,7 @@ export default function Projects() {
                         <a
                             href={project.link}
                             key={project.image}
-                            className="sm:w-1/3 w-100 p-3">
+                            className="sm:w-1/3 w-full p-3">
                                 <div className="flex relative h-full">
                                     <img
                                     alt="img"
