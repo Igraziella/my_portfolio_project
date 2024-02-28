@@ -4,7 +4,7 @@ import { faGithub, faXTwitter, faLinkedin, faInstagram } from "@fortawesome/free
 
 const Footer = () => {
     return (
-        <footer className="container bg-gray-400 p-7 px-10 text-black">
+        <footer className="container bg-gray-400 p-7 px-10 text-black min-w-full">
             <div className="flex justify-center items-center flex-col">
                 <div className="flex gap-6 text-3xl">
                     <a href="https://github.com/Igraziella">

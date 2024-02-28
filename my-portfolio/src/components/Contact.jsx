@@ -1,6 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
  
-const Contact = () => {
+ const Contact = () => {
     const [name, setName] = React.useState("");
     const [email, setEmail] = React.useState("");
     const [message, setMessage] = React.useState("");
@@ -16,7 +16,7 @@ const Contact = () => {
     function handleSubmit(e) {
         e.preventDefault();
         fetch("/", {
-            method: "POST, GET",
+            method: "POST",
             headers: { "Content-Type": "application/x-www-form-urlencoded" },
             body: encode({ "form-name": "contact", name, email, message }),
         })
