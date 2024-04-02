@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+/*import React, { useState } from "react";
  
  const Contact = () => {
     const [name, setName] = React.useState("");
@@ -23,6 +23,55 @@ import React, { useState } from "react";
         .then(() => alert("Message sent"))
         .catch((error) => alert("error"));
     }
+*/
+
+import React, { useState } from "react";
+
+const Contact = () => {
+    const [name, setName] = useState("");
+    const [email, setEmail] = useState("");
+    const [message, setMessage] = useState("");
+    const [submitted, setSubmitted] = useState(false);
+    const [emailError, setEmailError] = useState("");
+
+    function encode(data) {
+        return Object.keys(data)
+            .map((key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+            .join("&");
+    }
+
+    function handleSubmit(e) {
+        e.preventDefault();
+        if (!validateEmail(email)) {
+            setEmailError("Invalid email");
+            return;
+        }
+        fetch("/", {
+            method: "POST",
+            headers: { "Content-Type": "application/x-www-form-urlencoded" },
+            body: encode({ "form-name": "contact", name, email, message }),
+        })
+        .then(() => {
+            setSubmitted(true);
+            setName("");
+            setEmail("");
+            setMessage("");
+            setEmailError("");
+
+            //show success message as a pop-up
+            alert("Message sent successfully!");
+            
+            console.log("Form submitted successfully");
+            console.log("Name:", name);
+            console.log("Email:", email);
+        })
+        .catch((error) => console.error(error));
+    }
+
+    function validateEmail(email) {
+        const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return emailPattern.test(email);
+    }
 
     return (
         <section id="contact" className="relative">
@@ -34,7 +83,7 @@ import React, { useState } from "react";
                         title="map" 
                         className="absolute inset-0"   
                         style={{filter: "opacity(0.7)" }}
-                        allowfullscreen="" 
+                        allowFullScreen="" 
                         loading="lazy"
                         referrerpolicy="no-referrer-when-downgrade"
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.552319153856!2d7.539517173587817!3d6.451471423999103!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1044a416c5cff98f%3A0x98142f5bb0b2f49d!2sGoshen%20Estate%20Rd%2C%20400102%2C%20Enugu!5e0!3m2!1sen!2sng!4v1699625662651!5m2!1sen!2sng"
@@ -64,8 +113,10 @@ import React, { useState } from "react";
                 </div>
                 <form 
                 vercel
-                name="contact"
-                className="lg:w-1/2 md:w-1/2 flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0">
+                    name="contact"
+                    className="lg:w-1/2 md:w-1/2 flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0"
+                    onSubmit={handleSubmit}
+                >
                     <h2 className="text-green-300 sm:text-4xl text-3xl mb-1 font-medium title-font ">
                         Get In Touch
                     </h2>
@@ -81,6 +132,8 @@ import React, { useState } from "react";
                         type="text"
                         id="name"
                         name="name"
+                        value={name}
+                        onChange={(e) => setName(e.target.value)}
                         className="w-full bg-white rounded border border-black text-black py-1 px-3"
                         />
                     </div>
@@ -92,8 +145,14 @@ import React, { useState } from "react";
                         type="text"
                         id="email"
                         name="email"
-                        className="w-full bg-white rounded border border-black text-black py-1 px-3"
+                        value={email}
+                        onChange={(e) => {
+                            setEmail(e.target.value);
+                            setEmailError("");
+                        }}
+                        className={`w-full bg-white rounded border ${emailError ? 'border-red-500' : 'border-black'} text-black py-1 px-3`}   
                         />
+                        {emailError && <p className="text-red-500 text-sm mt-1">{emailError}</p>}
                     </div>
                     <div className="relative mb-4">
                         <label htmlFor="message" className="leading-7 text-sm text-white">
@@ -102,11 +161,15 @@ import React, { useState } from "react";
                         <textarea
                         id="message"
                         name="message"
+                        value={message}
+                        onChange={(e) => setMessage(e.target.value)}
                         className="w-full bg-white rounded border border-black text-black py-1 px-3 h-32 text-base leading-6 resize-none"
                         />
                     </div>
-                    <button type="submit"
-                    className="text-white text-sm font-bold bg-green-500 border-0 py-2 w-24 focus:outline-none rounded hover:bg-yellow-800">
+                    <button 
+                        type="submit"
+                        className="text-white text-sm font-bold bg-green-500 border-0 py-2 w-24 focus:outline-none rounded hover:bg-yellow-800"
+                    >
                         Submit
                     </button>
                 </form>
