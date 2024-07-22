@@ -65,6 +65,6 @@ export const skills = [
     5: "Responsive Design",
   },
   {
-    6: "MySQL",
+    6: "UI/UX",
   },
 ];

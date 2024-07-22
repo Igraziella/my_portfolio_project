@@ -15,25 +15,25 @@ const Footer = () => {
           <a href="https://github.com/Igraziella">
             <FontAwesomeIcon
               icon={faGithub}
-              className="hover:text-yellow-800"
+              className="hover:text-[#374151]"
             />
           </a>
           <a href="https://twitter.com/ObialorGraziel2">
             <FontAwesomeIcon
               icon={faXTwitter}
-              className="hover:text-yellow-800"
+              className="hover:text-[#374151]"
             />
           </a>
           <a href="https://www.linkedin.com/in/ijeoma-obialor-012494114/">
             <FontAwesomeIcon
               icon={faLinkedin}
-              className="hover:text-yellow-800"
+              className="hover:text-[#374151]"
             />
           </a>
           <a href="https://www.instagram.com/">
             <FontAwesomeIcon
               icon={faInstagram}
-              className="hover:text-yellow-800"
+              className="hover:text-[#374151]"
             />
           </a>
         </div>

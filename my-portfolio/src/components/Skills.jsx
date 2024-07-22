@@ -17,7 +17,7 @@ const Skills = () => {
         <div className="flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2">
           {skills.map((skill) => (
             <div key={skill} className="p-2 sm:w-1/2 w-full">
-              <div className="bg-green-600 hover:bg-yellow-900 rounded flex p-3 h-full items-center">
+              <div className="bg-green-600 hover:bg-green-900 rounded flex p-3 h-full items-center">
                 <span className="title-font font-medium text-white">
                   {skill[1]}
                   {skill[2]}

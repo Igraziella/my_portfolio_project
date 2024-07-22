@@ -15,13 +15,13 @@ const About = () => {
           <div className="flex justify-center">
             <a
               href="#contact"
-              className="inline-flex text-white bg-yellow-800 border-0 py-2 px-8 focus:outline-none hover:bg-green-700 hover:text-yellow-900 rounded text-lg"
+              className="inline-flex text-white bg-[#374151] border-0 py-2 px-8 focus:outline-none hover:bg-[#445064] rounded text-lg"
             >
               Work With Me
             </a>
             <a
               href="#projects"
-              className="ml-4 inline-flex text-white bg-green-800 border-0 py-2 px-8 focus:outline-none hover:bg-yellow-900 hover:text-green-600 rounded text-lg"
+              className="ml-4 inline-flex text-white bg-green-800 border-0 py-2 px-8 focus:outline-none hover:bg-green-600 rounded text-lg"
             >
               See My Works
             </a>
