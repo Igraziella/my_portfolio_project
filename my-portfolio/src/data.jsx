@@ -16,11 +16,11 @@ export const projects = [
     link: "https://interactive-rating-component-bay-five.vercel.app/",
   },
   {
-    title: "Recipe App",
-    subtitle: "HTML, CSS & Python Flask",
+    title: "Cloud Shop",
+    subtitle: "Tailwind & React Js",
     description:
-      "Recipe App for creating local meal plans tailored to cater to diabetics in Nigeria, sharing of meal ideas and customized menus between users",
-    image: "./vite.svg",
+      "E-commerce store specializing on cosmetic products",
+    image: "./velte_beauty.PNG",
     link: "https://diabeticsmealcompanion.com",
   },
   {
