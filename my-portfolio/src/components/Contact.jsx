@@ -102,7 +102,7 @@ const Contact = () => {
                                 EMAIL
                             </h2>
                             <a className="text-yellow-400 leading-relaxed">
-                                igraziella2@gmail.com
+                                ijeomaobialor3@gmail.com
                             </a>
                             <h2 className="title-font font-bold tracking-widest text-white text-xs mt-4">
                                 PHONE
